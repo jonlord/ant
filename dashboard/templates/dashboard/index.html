@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<div class="text-center">
+    <img src="{% static 'dashboard/ants-icon.jpg' %}" height="300px"
+         class="rounded" alt="Ant Logo">
+    <p>Walk as an <b>ANT</b>! Get into the <a href="{% url 'admin:index' %}">Admin</a></p>
+</div>
+{% endblock %}
